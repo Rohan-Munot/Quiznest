@@ -1,0 +1,1 @@
+module.exports = {JWT_SECRET: "rohan_server_pass"}
