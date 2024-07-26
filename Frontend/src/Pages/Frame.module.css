@@ -1,0 +1,273 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap');
+body {
+    margin: 0; line-height: normal;
+}
+
+.logoIcon {
+    width: 168px;
+    position: relative;
+    height: 68px;
+    overflow: hidden;
+    flex-shrink: 0;
+}
+.welcomeToQuiznest {
+    position: relative;
+    letter-spacing: -0.04em;
+    line-height: 28px;
+}
+.loginOrRegister {
+    align-self: stretch;
+    position: relative;
+    font-size: 16px;
+    letter-spacing: 0.02em;
+    line-height: 24px;
+    opacity: 0.8;
+}
+.welcomeToQuiznestParent {
+    align-self: stretch;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 4px;
+}
+.forJobseekers {
+    width: 104px;
+    position: relative;
+    font-weight: 500;
+    display: inline-block;
+    flex-shrink: 0;
+}
+.forJobseekersWrapper {
+    width: 152px;
+    box-shadow: 5.200000286102295px 0px 31.2px rgba(0, 0, 0, 0.08);
+    border-radius: 8px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 12px 24px;
+    box-sizing: border-box;
+}
+.forEmployers {
+    width: 104px;
+    position: relative;
+    font-weight: 500;
+    display: inline-block;
+    flex-shrink: 0;
+    opacity: 0.6;
+}
+.forEmployersWrapper {
+    width: 152px;
+    border-radius: 52px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 12px 24px;
+    box-sizing: border-box;
+}
+.frameContainer {
+    border-radius: 12px;
+    background-color: #f8f9fc;
+    overflow: hidden;
+    display: none;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 6px;
+    font-size: 14px;
+    color: #1a1b21;
+}
+.logoParent {
+    align-self: stretch;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+.userSignup {
+    position: relative;
+    line-height: 14px;
+    font-weight: 500;
+}
+.userSignupWrapper {
+    width: 152px;
+    border-radius: 4px;
+    height: 38px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 12px 24px;
+    box-sizing: border-box;
+}
+.userSignupContainer {
+    width: 152px;
+    border-radius: 4px;
+    background-color: #fff;
+    border: 1px solid #eaeaea;
+    box-sizing: border-box;
+    height: 38px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 14px 24px;
+    color: #1c1c1f;
+}
+.frameDiv {
+    border-radius: 8px;
+    background-color: #f0f4f5;
+    border: 1px solid #f1f1f1;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 6px;
+    font-size: 14px;
+    color: #707276;
+}
+.frameGroup {
+    align-self: stretch;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 24px;
+}
+.title {
+    position: relative;
+    letter-spacing: 0.02em;
+    line-height: 18px;
+    opacity: 0.8;
+}
+.placeholderTextWrapper {
+    align-self: stretch;
+    border-radius: 8px;
+    background-color: #fafafa;
+    border: 1px solid #e0e0e0;
+    box-sizing: border-box;
+    height: 54px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 18px 16px;
+    text-align: justify;
+    font-size: 14px;
+    color: #1c1c1f;;
+}
+.inputFields {
+    align-self: stretch;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 4px;
+
+}
+.visibilityIcon {
+    width: 18px;
+    position: relative;
+    height: 18px;
+}
+.placeholderTextParent {
+    align-self: stretch;
+    border-radius: 8px;
+    background-color: #fafafa;
+    border: 1px solid #e0e0e0;
+    box-sizing: border-box;
+    height: 54px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 18px 16px;
+    text-align: center;
+    font-size: 14px;
+    color: #666;
+}
+.inputFieldsParent {
+    width: 440px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 16px;
+}
+.primaryButton {
+    width: 440px;
+    border-radius: 8px;
+    background-color: #1c4b80;
+    height: 52px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 14px 28px;
+    box-sizing: border-box;
+}
+.loginNow {
+    font-weight: 500;
+    color: #1c4b80;
+    cursor: pointer;
+}
+.alreadyHaveAnContainer {
+    align-self: stretch;
+    position: relative;
+    font-size: 14px;
+    letter-spacing: 0.01em;
+    line-height: 20px;
+    text-align: center;
+    color: #1c1c1f;
+}
+.primaryButtonParent {
+    align-self: stretch;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 16px;
+    font-size: 20px;
+    color: #f3f9ff;
+}
+.frameParent1 {
+    align-self: stretch;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 24px;
+    text-align: left;
+    font-size: 12px;
+}
+.frameParent {
+    width: max-content;
+    height: 742px;
+    position: relative;
+    border-radius: 18px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 28px 36px;
+    box-sizing: border-box;
+    gap: 24px;
+    text-align: center;
+    font-size: 24px;
+    color: #1c1c1f;
+    font-family: 'DM Sans', sans-serif;
+    margin: auto;
+}
+.main{
+    box-sizing: border-box;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: #F0F4F5;
+}

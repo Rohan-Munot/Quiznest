@@ -18,8 +18,21 @@ router.post('/signup', async (req, res) => {
         if (existingAdmin) {
             return res.status(400).json({msg: 'Admin already exists'})
         }
-        const newAdmin = await Admin.create(req.body);
+        const newAdmin = await Admin.create({
+            username: req.body.username,
+            password: req.body.password,
+            fullname: req.body.fullname,
+        });
         await newAdmin.save();
+        const userId = newAdmin._id;
+        const token = jwt.sign({
+            userId
+        }, JWT_SECRET);
+
+        res.json({
+            message: "User created successfully",
+            token: token
+        })
         res.status(201).json({msg:"Signup successfully"})
     }catch (error) {
         if (error instanceof zod.ZodError) {
