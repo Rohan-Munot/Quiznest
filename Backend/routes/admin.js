@@ -4,6 +4,11 @@ const router = Router();
 const jwt =require('jsonwebtoken');
 const {JWT_SECRET} = require('../config');
 const Admin = require("../models/adminModel");
+const {Quiz} = require("../models/quizModel");
+const adminMiddleware = require('../middlewares/admin')
+const {Question} = require("../models/questionModel");
+const {mongo} = require("mongoose");
+const mongoose = require("mongoose");
 
 const signupSchema = zod.object({
     username: zod.string().email().trim(),
@@ -82,5 +87,48 @@ router.post('/signin', async (req, res) => {
     }
 })
 
+const quizSchema = zod.object({
+    title: zod.string(),
+    difficultyLevel: zod.string()
+})
+router.post('/quiz',adminMiddleware, async (req, res)=>{
+    try {
+        const {title, difficultyLevel} = quizSchema.parse(req.body)
+        const newQuiz = await Quiz.create({
+            title,
+            difficultyLevel
+        })
+        const quizId = newQuiz._id
+        res.json({
+            message: "Quiz Created successfully",
+            quizId
+        })
+    }catch (err) {
+        if (err instanceof zod.ZodError) {
+            res.status(403).json({msg: 'Invalid Inputs'})
+        }
+        res.status(403).json({msg: 'Error Creating Quiz'})
+    }
+})
+// const questionSchema = zod.object({
+//     quesText: zod.string(),
+//     quesOption: zod.array(object)
+// })
+router.post('/quiz/:quizId/questions',adminMiddleware, async (req, res)=>{
+    try {
+        const quizId = req.params.quizId
+        const question = await Question.create({
+            quizId,
+            quesText: req.body.quesText,
+            quesOption: req.body.quesOption
+        })
+        res.json({
+            msg: "question added successfully",
+            question
+        })
+    }catch (err) {
+        res.status(403).json({msg: 'Error Creating Question'})
+    }
+})
 
 module.exports = router;
