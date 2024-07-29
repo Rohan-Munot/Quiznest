@@ -4,7 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d7efd613-241e-489a-b004-74159ac92736" name="Changes" comment="edit">
+    <list default="true" id="d7efd613-241e-489a-b004-74159ac92736" name="Changes" comment="upcoming quizzes">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Backend/routes/admin.js" beforeDir="false" afterPath="$PROJECT_DIR$/Backend/routes/admin.js" afterDir="false" />
     </list>
@@ -61,7 +62,7 @@
     &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
     &quot;javascript.nodejs.core.library.configured.version&quot;: &quot;20.12.1&quot;,
     &quot;javascript.nodejs.core.library.typings.version&quot;: &quot;20.12.14&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Web_Development_Bootcamp/REACT/Week-09&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Rohan Munot/Downloads/supermaven-1.37.zip&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -114,6 +115,10 @@
       <workItem from="1721981481292" duration="6606000" />
       <workItem from="1722003260469" duration="6098000" />
       <workItem from="1722062355032" duration="810000" />
+      <workItem from="1722215701554" duration="4445000" />
+      <workItem from="1722233384850" duration="315000" />
+      <workItem from="1722233711133" duration="993000" />
+      <workItem from="1722234715606" duration="2372000" />
     </task>
     <task id="LOCAL-00001" summary="Added db file">
       <option name="closed" value="true" />
@@ -163,7 +168,15 @@
       <option name="project" value="LOCAL" />
       <updated>1721981546110</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="upcoming quizzes">
+      <option name="closed" value="true" />
+      <created>1722220672657</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1722220672657</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -186,6 +199,7 @@
     <MESSAGE value="Signup admin frontend" />
     <MESSAGE value="fe be connected" />
     <MESSAGE value="edit" />
-    <option name="LAST_COMMIT_MESSAGE" value="edit" />
+    <MESSAGE value="upcoming quizzes" />
+    <option name="LAST_COMMIT_MESSAGE" value="upcoming quizzes" />
   </component>
 </project>
