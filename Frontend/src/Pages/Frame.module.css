@@ -246,7 +246,7 @@ body {
 }
 .frameParent {
     width: max-content;
-    height: 742px;
+    height: max-content;
     position: relative;
     border-radius: 18px;
     background-color: #fff;
