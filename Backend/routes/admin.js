@@ -1,4 +1,4 @@
-const {Router} = require('express');
+const {Router, response} = require('express');
 const zod = require('zod')
 const router = Router();
 const jwt =require('jsonwebtoken');
@@ -89,14 +89,18 @@ router.post('/signin', async (req, res) => {
 
 const quizSchema = zod.object({
     title: zod.string(),
-    difficultyLevel: zod.string()
+    difficultyLevel: zod.string(),
+    quizAt: zod.date()
 })
-router.post('/quiz',adminMiddleware, async (req, res)=>{
+router.post('/quiz/create',adminMiddleware, async (req, res)=>{
     try {
-        const {title, difficultyLevel} = quizSchema.parse(req.body)
+        const date = new Date(req.body.quizAt).toString()
+        req.body.quizAt = new Date(date)
+        const {title, difficultyLevel, quizAt} = quizSchema.parse(req.body)
         const newQuiz = await Quiz.create({
             title,
-            difficultyLevel
+            difficultyLevel,
+            quizAt
         })
         const quizId = newQuiz._id
         res.json({
@@ -105,16 +109,16 @@ router.post('/quiz',adminMiddleware, async (req, res)=>{
         })
     }catch (err) {
         if (err instanceof zod.ZodError) {
-            res.status(403).json({msg: 'Invalid Inputs'})
+            res.status(403).json({msg: 'Invalid Inputs', errors: err.errors})
         }
-        res.status(403).json({msg: 'Error Creating Quiz'})
+        res.status(403).json({msg: 'Error Creating Quiz',errors: err.message})
     }
 })
 // const questionSchema = zod.object({
 //     quesText: zod.string(),
 //     quesOption: zod.array(object)
 // })
-router.post('/quiz/:quizId/questions',adminMiddleware, async (req, res)=>{
+router.post('/quiz/create/:quizId/questions',adminMiddleware, async (req, res)=>{
     try {
         const quizId = req.params.quizId
         const question = await Question.create({
@@ -130,5 +134,15 @@ router.post('/quiz/:quizId/questions',adminMiddleware, async (req, res)=>{
         res.status(403).json({msg: 'Error Creating Question'})
     }
 })
-
+router.get('/quiz/upcoming',adminMiddleware,async (req,res)=>{
+    try {
+        const now = new Date()
+        const upcomingQuizzes =  await Quiz.find({quizAt: {$gt: now}})
+        res.json({
+            upcomingQuizzes
+        })
+    }catch (err) {
+        res.status(403).json({msg:"error fetching quizzes", err})
+    }
+})
 module.exports = router;

@@ -10,6 +10,10 @@ const quizSchema = new Schema({
     difficultyLevel: {
         type: String,
         enum: ['easy', 'medium', 'hard'],
+    },
+    quizAt: {
+        type: Date,
+        required: true
     }
 },{timestamps: true})
 
