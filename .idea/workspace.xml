@@ -4,12 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d7efd613-241e-489a-b004-74159ac92736" name="Changes" comment="fe be connected">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Frontend/src/App.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/src/App.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Frontend/src/Pages/Frame.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/src/Pages/Frame.module.css" afterDir="false" />
-    </list>
+    <list default="true" id="d7efd613-241e-489a-b004-74159ac92736" name="Changes" comment="patch and delete" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -25,7 +20,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="main" />
+        <entry key="$PROJECT_DIR$" value="frontend" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -58,16 +53,18 @@
   &quot;keyToString&quot;: {
     &quot;ReactCreateComponentLastSelected&quot;: &quot;functionDeclarationComponent&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;frontend&quot;,
+    &quot;full.screen.before.presentation.mode&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;backend&quot;,
     &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
     &quot;javascript.nodejs.core.library.configured.version&quot;: &quot;20.12.1&quot;,
     &quot;javascript.nodejs.core.library.typings.version&quot;: &quot;20.12.14&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Web_Development_Bootcamp/REACT/Week-09&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Rohan Munot/Downloads/supermaven-1.37.zip&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
     &quot;ts.external.directory.path&quot;: &quot;C:\\Program Files\\JetBrains\\WebStorm 2024.1.4\\plugins\\javascript-plugin\\jsLanguageServicesImpl\\external&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
@@ -111,6 +108,13 @@
       <workItem from="1721910706806" duration="10000" />
       <workItem from="1721922274012" duration="228000" />
       <workItem from="1721980430683" duration="735000" />
+      <workItem from="1721981481292" duration="6606000" />
+      <workItem from="1722003260469" duration="6098000" />
+      <workItem from="1722062355032" duration="810000" />
+      <workItem from="1722215701554" duration="4445000" />
+      <workItem from="1722233384850" duration="315000" />
+      <workItem from="1722233711133" duration="993000" />
+      <workItem from="1722234715606" duration="2707000" />
     </task>
     <task id="LOCAL-00001" summary="Added db file">
       <option name="closed" value="true" />
@@ -152,17 +156,71 @@
       <option name="project" value="LOCAL" />
       <updated>1721892316216</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="edit">
+      <option name="closed" value="true" />
+      <created>1721981546110</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1721981546110</updated>
+    </task>
+    <task id="LOCAL-00007" summary="upcoming quizzes">
+      <option name="closed" value="true" />
+      <created>1722220672657</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1722220672657</updated>
+    </task>
+    <task id="LOCAL-00008" summary="patch and delete">
+      <option name="closed" value="true" />
+      <created>1722237285221</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1722237285221</updated>
+    </task>
+    <task id="LOCAL-00009" summary="patch and delete">
+      <option name="closed" value="true" />
+      <created>1722237330150</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1722237330150</updated>
+    </task>
+    <task id="LOCAL-00010" summary="patch and delete">
+      <option name="closed" value="true" />
+      <created>1722237392295</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1722237392295</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Added db file" />
     <MESSAGE value="Updated schema structure. Added signup and signin routes for admin" />
     <MESSAGE value="Signup admin frontend" />
     <MESSAGE value="fe be connected" />
-    <option name="LAST_COMMIT_MESSAGE" value="fe be connected" />
+    <MESSAGE value="edit" />
+    <MESSAGE value="upcoming quizzes" />
+    <MESSAGE value="patch and delete" />
+    <option name="LAST_COMMIT_MESSAGE" value="patch and delete" />
   </component>
 </project>
