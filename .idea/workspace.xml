@@ -4,18 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d7efd613-241e-489a-b004-74159ac92736" name="Changes" comment="optimized">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Frontend/src/App.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/src/App.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Frontend/src/Components/AdminUserLogin.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/src/Components/AdminUserLogin.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Frontend/src/Components/BottomWarning.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/src/Components/BottomWarning.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Frontend/src/Components/Button.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/src/Components/Button.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Frontend/src/Components/Heading.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/src/Components/Heading.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Frontend/src/Components/InputBox.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/src/Components/InputBox.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Frontend/src/Pages/Frame.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/src/CSS/Frame.module.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Frontend/src/Pages/Signin.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/src/Pages/Signin.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Frontend/src/Pages/Signup.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/src/Pages/Signup.jsx" afterDir="false" />
-    </list>
+    <list default="true" id="d7efd613-241e-489a-b004-74159ac92736" name="Changes" comment="optimized" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -136,7 +125,7 @@
       <workItem from="1722319484551" duration="10864000" />
       <workItem from="1722353363549" duration="6151000" />
       <workItem from="1722390416607" duration="5976000" />
-      <workItem from="1722443393708" duration="2054000" />
+      <workItem from="1722443393708" duration="2387000" />
     </task>
     <task id="LOCAL-00001" summary="Added db file">
       <option name="closed" value="true" />
@@ -226,7 +215,23 @@
       <option name="project" value="LOCAL" />
       <updated>1722443438159</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="optimized">
+      <option name="closed" value="true" />
+      <created>1722445499015</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1722445499015</updated>
+    </task>
+    <task id="LOCAL-00013" summary="optimized">
+      <option name="closed" value="true" />
+      <created>1722445643548</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1722445643548</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
