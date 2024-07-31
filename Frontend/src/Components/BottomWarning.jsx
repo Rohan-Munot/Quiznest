@@ -1,5 +1,5 @@
 import {Link} from "react-router-dom";
-import styles from "../Pages/Frame.module.css";
+import styles from "../CSS/Frame.module.css";
 import React from "react";
 
 export function BottomWarning({label, buttonText, to}) {

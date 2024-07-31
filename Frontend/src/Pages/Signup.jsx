@@ -2,7 +2,7 @@ import {MemoizedAdminUserLogin} from "../Components/AdminUserLogin.jsx";
 import {MemoizedButton} from "../Components/Button.jsx";
 import {MemoizedHeading} from "../Components/Heading.jsx";
 import {useNavigate} from "react-router-dom";
-import styles from './Frame.module.css';
+import styles from '../CSS/Frame.module.css';
 import {useFormik} from "formik";
 import axios from "axios";
 import {MemoizedLogo} from "../Components/Logo.jsx";

@@ -1,4 +1,4 @@
-import styles from '../Pages/Frame.module.css';
+import styles from '../CSS/Frame.module.css';
 import React from "react";
 
 export function InputBox({id, name, label, placeholder, type='text', onChange, onBlur, value, error}) {

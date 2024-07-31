@@ -1,4 +1,4 @@
-import styles from "./Frame.module.css";
+import styles from "../CSS/Frame.module.css";
 import {MemoizedLogo} from "../Components/Logo.jsx";
 import {MemoizedHeading} from "../Components/Heading.jsx";
 import {MemoizedAdminUserLogin} from "../Components/AdminUserLogin.jsx";
