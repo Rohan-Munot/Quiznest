@@ -271,3 +271,9 @@ body {
     justify-content: center;
     background-color: #F0F4F5;
 }
+.errorText {
+    position: relative;
+    letter-spacing: 0.02em;
+    line-height: 18px;
+    color: #d63333;
+}

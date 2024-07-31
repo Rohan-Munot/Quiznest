@@ -4,7 +4,20 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d7efd613-241e-489a-b004-74159ac92736" name="Changes" comment="patch and delete" />
+    <list default="true" id="d7efd613-241e-489a-b004-74159ac92736" name="Changes" comment="patch and delete">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Frontend/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Frontend/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Frontend/src/Components/AdminUserLogin.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/src/Components/AdminUserLogin.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Frontend/src/Components/BottomWarning.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/src/Components/BottomWarning.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Frontend/src/Components/Button.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/src/Components/Button.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Frontend/src/Components/Heading.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/src/Components/Heading.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Frontend/src/Components/InputBox.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/src/Components/InputBox.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Frontend/src/Components/Logo.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/src/Components/Logo.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Frontend/src/Pages/Frame.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/src/Pages/Frame.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Frontend/src/Pages/Signin.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/src/Pages/Signin.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Frontend/src/Pages/Signup.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/src/Pages/Signup.jsx" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -20,7 +33,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="frontend" />
+        <entry key="$PROJECT_DIR$" value="backend" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -49,26 +62,26 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ReactCreateComponentLastSelected&quot;: &quot;functionDeclarationComponent&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;full.screen.before.presentation.mode&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;backend&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;javascript.nodejs.core.library.configured.version&quot;: &quot;20.12.1&quot;,
-    &quot;javascript.nodejs.core.library.typings.version&quot;: &quot;20.12.14&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/Rohan Munot/Downloads/supermaven-1.37.zip&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
-    &quot;ts.external.directory.path&quot;: &quot;C:\\Program Files\\JetBrains\\WebStorm 2024.1.4\\plugins\\javascript-plugin\\jsLanguageServicesImpl\\external&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ReactCreateComponentLastSelected": "functionDeclarationComponent",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "full.screen.before.presentation.mode": "false",
+    "git-widget-placeholder": "Pre-Push",
+    "ignore.virus.scanning.warn.message": "true",
+    "javascript.nodejs.core.library.configured.version": "20.12.1",
+    "javascript.nodejs.core.library.typings.version": "20.12.14",
+    "last_opened_file_path": "C:/Web_Development_Bootcamp/Serverless-Backend/my-app",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "ts.external.directory.path": "C:\\Program Files\\JetBrains\\WebStorm 2024.1.4\\plugins\\javascript-plugin\\jsLanguageServicesImpl\\external",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="ReactDesignerToolWindowState">
     <option name="myId2Visible">
       <map>
@@ -115,6 +128,11 @@
       <workItem from="1722233384850" duration="315000" />
       <workItem from="1722233711133" duration="993000" />
       <workItem from="1722234715606" duration="2707000" />
+      <workItem from="1722247095146" duration="2899000" />
+      <workItem from="1722273322124" duration="2388000" />
+      <workItem from="1722319484551" duration="10864000" />
+      <workItem from="1722353363549" duration="6151000" />
+      <workItem from="1722390416607" duration="5976000" />
     </task>
     <task id="LOCAL-00001" summary="Added db file">
       <option name="closed" value="true" />

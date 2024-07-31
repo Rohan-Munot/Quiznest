@@ -1,4 +1,5 @@
 import styles from "../Pages/Frame.module.css";
+import React from "react";
 
 export function Heading() {
     return (
@@ -9,3 +10,4 @@ export function Heading() {
         </div>
     )
 }
+export const MemoizedHeading = React.memo(Heading);

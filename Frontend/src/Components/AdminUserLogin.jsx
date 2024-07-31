@@ -1,4 +1,5 @@
 import styles from "../Pages/Frame.module.css";
+import React from "react";
 
 export function AdminUserLogin() {
     return (
@@ -12,3 +13,4 @@ export function AdminUserLogin() {
         </div>
     )
 }
+export const MemoizedAdminUserLogin = React.memo(AdminUserLogin);

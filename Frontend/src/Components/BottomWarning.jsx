@@ -1,5 +1,6 @@
 import {Link} from "react-router-dom";
 import styles from "../Pages/Frame.module.css";
+import React from "react";
 
 export function BottomWarning({label, buttonText, to}) {
     return (
@@ -9,3 +10,5 @@ export function BottomWarning({label, buttonText, to}) {
         </div>
     )
 }
+
+export const MemoizedBottomWarning = React.memo(BottomWarning);
