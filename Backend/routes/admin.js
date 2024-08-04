@@ -36,7 +36,6 @@ router.post('/signup', async (req, res) => {
             message: "User created successfully",
             token: token
         })
-        res.status(201).json({msg:"Signup successfully"})
     }catch (error) {
         if (error instanceof zod.ZodError) {
             res.status(403).json({msg: 'Invalid Inputs'})
@@ -60,7 +59,7 @@ router.post('/signin', async (req, res) => {
                 msg: 'Invalid username or password'
             })
         }
-
+        const AdminName = admin.fullname.split(' ')[0]
         // Check password
         const isMatch = await admin.comparePassword(password)
         if (!isMatch) {
@@ -76,7 +75,8 @@ router.post('/signin', async (req, res) => {
     //     On successful authentication
         res.json({
             msg: 'Successfully logged in' ,
-            token: token
+            token: token,
+            AdminName
         })
     }catch (error) {
         if (error instanceof zod.ZodError) {

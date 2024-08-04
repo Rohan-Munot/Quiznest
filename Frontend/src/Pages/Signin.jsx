@@ -34,6 +34,7 @@ export function Signin() {
                 username: values.email,
                 password: values.password
             })
+            localStorage.setItem("firstName", response.data.AdminName);
             localStorage.setItem("token", response.data.token)
             navigate('/dashboard')
         }

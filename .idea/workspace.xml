@@ -4,7 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d7efd613-241e-489a-b004-74159ac92736" name="Changes" comment="optimized" />
+    <list default="true" id="d7efd613-241e-489a-b004-74159ac92736" name="Changes" comment="optimized">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Backend/routes/admin.js" beforeDir="false" afterPath="$PROJECT_DIR$/Backend/routes/admin.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Frontend/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Frontend/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Frontend/src/App.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/src/App.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Frontend/src/Pages/Signin.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/src/Pages/Signin.jsx" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -58,7 +65,7 @@
     &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
     &quot;javascript.nodejs.core.library.configured.version&quot;: &quot;20.12.1&quot;,
     &quot;javascript.nodejs.core.library.typings.version&quot;: &quot;20.12.14&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Web_Development_Bootcamp/Serverless-Backend/my-app&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Web_Development_Bootcamp&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -125,7 +132,14 @@
       <workItem from="1722319484551" duration="10864000" />
       <workItem from="1722353363549" duration="6151000" />
       <workItem from="1722390416607" duration="5976000" />
-      <workItem from="1722443393708" duration="2387000" />
+      <workItem from="1722443393708" duration="3700000" />
+      <workItem from="1722482075395" duration="11875000" />
+      <workItem from="1722527739437" duration="4606000" />
+      <workItem from="1722580935757" duration="4066000" />
+      <workItem from="1722618329243" duration="594000" />
+      <workItem from="1722669783804" duration="1973000" />
+      <workItem from="1722700566190" duration="5990000" />
+      <workItem from="1722765457588" duration="3550000" />
     </task>
     <task id="LOCAL-00001" summary="Added db file">
       <option name="closed" value="true" />
