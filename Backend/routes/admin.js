@@ -32,11 +32,11 @@ router.post('/signup', async (req, res) => {
             userId
         }, JWT_SECRET);
 
-        res.json({
+        res.status(201).json({
             message: "User created successfully",
             token: token
         })
-        res.status(201).json({msg:"Signup successfully"})
+        
     }catch (error) {
         if (error instanceof zod.ZodError) {
             res.status(403).json({msg: 'Invalid Inputs'})

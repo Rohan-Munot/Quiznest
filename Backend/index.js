@@ -2,6 +2,7 @@ const express = require("express");
 const app = express();
 const adminRouter =require('./routes/admin')
 const cors = require('cors')
+require('dotenv').config();
 
 
 app.use(cors())
@@ -14,7 +15,7 @@ const mongoose = require('mongoose');
 
 const connectDB = async () => {
     try {
-        await mongoose.connect('mongodb://localhost:27017/Quiznest')
+        await mongoose.connect(process.env.MONGO_URI)
         console.log('MongoDB Connected');
     }catch (error) {
         console.error('Database Connection Error: ',error);
@@ -22,4 +23,4 @@ const connectDB = async () => {
 }
 connectDB().then(r => 'connected db');
 
-app.listen(3000, () => console.log("Server running on port 3000"));
+app.listen(5000, () => console.log("Server running on port 3000"));

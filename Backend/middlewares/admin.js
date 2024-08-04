@@ -1,27 +1,25 @@
 const jwt = require("jsonwebtoken");
 const {JWT_SECRET} = require("../config")
-// Middleware for handling auth
-function adminMiddleware(req, res, next) {
-    // Implement admin auth logic
-    // You need to check the headers and validate the admin from the admin DB. Check readme for the exact headers to be expected
-    const token = req.headers.authorization;
-    const words = token.split(' '); // ["Bearer" , "token"]
-    const jwtToken = words[1]; //["token"]
-    const decodedValue= jwt.verify(jwtToken, JWT_SECRET)
-    try{
-        if (decodedValue.username){
-            next()
-        }else{
-            res.status(403).json({
-                msg:"Authentication failed"
-            })
-        }
-    }catch (e){
-        res.status(403).json({
-            msg:"Incorrect inputs"
-        })
-    }
+const { UnauthenticatedError } = require('../errors')
 
+// Middleware for handling auth
+
+const auth = async(req,res,next)=>{
+    const authHeader=req.headers.authorization
+
+    if(!authHeader || !authHeader.startsWith('Bearer ')){
+throw new UnauthenticatedError('Authentication Invalid')
+    }
+      
+    const token=authHeader.split(' ')[1]
+
+    try{
+        const payload=jwt.verify(token,JWT_SECRET)
+        req.admin={adminID:payload.adminID,name:payload.username}
+        next()
+    }  catch(error){
+       throw new UnauthenticatedError('Authentication invalid')
+    }
 }
 
-module.exports = adminMiddleware;
+module.exports=auth
