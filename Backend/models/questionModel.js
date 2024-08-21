@@ -7,17 +7,22 @@ const options = new Schema ({
     isCorrect: Boolean,
 })
 const questionSchema = new Schema({
-    quizId: {
+    questionBankId: {
         type: mongoose.Schema.Types.ObjectId,
-        ref: 'Quiz'
+        ref: 'QuestionBank'
     },
     quesText: {
         type: String,
         required: true,
         trim: true
     },
+    createdBy:{
+        type: Schema.Types.ObjectId,
+        ref: 'Admin',
+        required: true
+    },
     quesOption: [options]
-})
+},{timestamps: true})
 
 const Question = mongoose.model('Question', questionSchema)
 module.exports = {

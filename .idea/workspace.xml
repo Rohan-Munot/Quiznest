@@ -4,13 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d7efd613-241e-489a-b004-74159ac92736" name="Changes" comment="optimized">
+    <list default="true" id="d7efd613-241e-489a-b004-74159ac92736" name="Changes" comment="Dashboard Page for Admins">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Backend/middlewares/admin.js" beforeDir="false" afterPath="$PROJECT_DIR$/Backend/middlewares/admin.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Backend/models/questionModel.js" beforeDir="false" afterPath="$PROJECT_DIR$/Backend/models/questionModel.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Backend/models/quizModel.js" beforeDir="false" afterPath="$PROJECT_DIR$/Backend/models/questionBank.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Backend/routes/admin.js" beforeDir="false" afterPath="$PROJECT_DIR$/Backend/routes/admin.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Frontend/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Frontend/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Frontend/src/App.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/src/App.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Frontend/src/Pages/Signin.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/src/Pages/Signin.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Frontend/src/Pages/Dashboard.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/src/Pages/Dashboard.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Frontend/src/main.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/src/main.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -65,7 +67,7 @@
     &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
     &quot;javascript.nodejs.core.library.configured.version&quot;: &quot;20.12.1&quot;,
     &quot;javascript.nodejs.core.library.typings.version&quot;: &quot;20.12.14&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Web_Development_Bootcamp&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Web_Development_Bootcamp/Week-12&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -139,7 +141,15 @@
       <workItem from="1722618329243" duration="594000" />
       <workItem from="1722669783804" duration="1973000" />
       <workItem from="1722700566190" duration="5990000" />
-      <workItem from="1722765457588" duration="3550000" />
+      <workItem from="1722765457588" duration="5318000" />
+      <workItem from="1722837834071" duration="1212000" />
+      <workItem from="1723568572338" duration="237000" />
+      <workItem from="1723642426662" duration="2610000" />
+      <workItem from="1723650158114" duration="3589000" />
+      <workItem from="1723656481169" duration="7703000" />
+      <workItem from="1723890785743" duration="159000" />
+      <workItem from="1723890954256" duration="5000" />
+      <workItem from="1724004441436" duration="4666000" />
     </task>
     <task id="LOCAL-00001" summary="Added db file">
       <option name="closed" value="true" />
@@ -245,7 +255,15 @@
       <option name="project" value="LOCAL" />
       <updated>1722445643548</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="Dashboard Page for Admins">
+      <option name="closed" value="true" />
+      <created>1722786798304</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1722786798304</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -271,6 +289,7 @@
     <MESSAGE value="upcoming quizzes" />
     <MESSAGE value="patch and delete" />
     <MESSAGE value="optimized" />
-    <option name="LAST_COMMIT_MESSAGE" value="optimized" />
+    <MESSAGE value="Dashboard Page for Admins" />
+    <option name="LAST_COMMIT_MESSAGE" value="Dashboard Page for Admins" />
   </component>
 </project>

@@ -11,12 +11,14 @@ import {MemoizedReportsIcon} from "../assets/ReportsIcon.jsx";
 import {MemoizedSettingsIcon} from "../assets/SettingsIcon.jsx";
 import {MemoizedManageSearchIcon} from "../assets/ManageSearchIcon.jsx";
 import {MemoizedAddIcon} from "../assets/AddIcon.jsx";
+import {useNavigate} from "react-router-dom";
 
 
 function SidebarItems({icon: Icon, text, onClick}) {
     const [selectedSidebarItem, setSelectedSidebarItem] = useRecoilState(selectedSidebarItemState);
     const handleClick = () => {
         setSelectedSidebarItem(text);
+        if (onClick) onClick(text)
     }
     return (
         <div className={`${styles.component1} ${selectedSidebarItem === text ? styles.selected : ''}`} onClick={handleClick}>
@@ -27,8 +29,14 @@ function SidebarItems({icon: Icon, text, onClick}) {
 }
 
 
+
+async function logout() {
+    await localStorage.clear();
+}
+
 export function Dashboard() {
     let firstName = localStorage.getItem("firstName");
+    const navigate = useNavigate();
     return (
         <RecoilRoot>
         <div className={styles.main}>
@@ -44,7 +52,7 @@ export function Dashboard() {
                     <SidebarItems icon={MemoizedManageSearchIcon} text={'Manage Quizzes'} onClick={() => {}}/>
                     <SidebarItems icon={MemoizedSettingsIcon} text={'Settings'} onClick={() => {}}/>
                     <SidebarItems icon={MemoizedReportsIcon} text={'Reports'} onClick={() => {}}/>
-                    <SidebarItems icon={MemoizedLogoutIcon} text={'Logout'} onClick={() => {}}/>
+                    <SidebarItems icon={MemoizedLogoutIcon} text={'Logout'} onClick={() => {logout().then(r => navigate('/signin'))}}/>
                 </div></div>
             <div className={styles.navbar}>
                 <NavbarItems name={firstName} />

@@ -4,7 +4,7 @@ const router = Router();
 const jwt =require('jsonwebtoken');
 const {JWT_SECRET} = require('../config');
 const Admin = require("../models/adminModel");
-const {Quiz} = require("../models/quizModel");
+const {Quiz, QuestionBank} = require("../models/questionBank");
 const adminMiddleware = require('../middlewares/admin')
 const {Question} = require("../models/questionModel");
 
@@ -29,7 +29,8 @@ router.post('/signup', async (req, res) => {
         await newAdmin.save();
         const userId = newAdmin._id;
         const token = jwt.sign({
-            userId
+            userId,
+            username: req.body.username
         }, JWT_SECRET);
 
         res.json({
@@ -113,13 +114,73 @@ router.post('/quiz/create',adminMiddleware, async (req, res)=>{
         res.status(403).json({msg: 'Error Creating Quiz',errors: err.message})
     }
 })
-
+const questionBankSchema = zod.object({
+    title: zod.string(),
+    description: zod.string(),
+})
+router.post('/questionBank/create',adminMiddleware, async (req, res) => {
+    try{
+        const {title, description} = questionBankSchema.parse(req.body)
+        const newQuestionBank =  await QuestionBank.create({
+            title,
+            description,
+            createdBy: req.admin.adminID
+        })
+        res.json({
+            msg: "QuestionBank Created successfully",
+            newQuestionBank: newQuestionBank._id
+        })
+    }catch (err) {
+        if (err instanceof zod.ZodError) {
+            res.status(403).json({msg: 'Invalid Inputs', errors: err.errors})
+        }
+        res.status(403).json({msg: 'Error Creating QuestionBank',errors: err.message})
+    }
+})
 const questionSchema = zod.object({
     quesText: zod.string(),
     quesOption: zod.array(zod.object({
         optionText: zod.string(),
         isCorrect: zod.boolean()
     }))
+})
+router.post('/questionBank/:id/question',adminMiddleware, async (req, res) => {
+    try{
+        const{quesText, quesOption} = questionSchema.parse(req.body)
+        // const questionBank = await QuestionBank.findById(req.params.id)
+        // if (!questionBank) {
+        //     return res.status(404).json({msg: 'QuestionBank not found'})
+        // }
+
+        // // Array initialization
+        // if(!Array.isArray(questionBank.questions)){
+        //     questionBank.questions = [];
+        // }
+        const questionBankId = req.params.id
+
+        // Creating new question
+        const question = await Question.create({
+            questionBankId,
+            quesText,
+            quesOption,
+            createdBy: req.admin.adminID
+        })
+
+        // Updating questionBank with new question id
+        const questionBank = await QuestionBank.findByIdAndUpdate(req.params.id, {
+            $push:{questions: question._id},
+            new: true, useFindAndModify: false
+        })
+        res.json({
+            msg: "question added successfully",
+            question
+        })
+    }catch (err) {
+        console.log(err)
+        if (err instanceof zod.ZodError) {
+            res.status(403).json({msg: 'Invalid Inputs', errors: err.errors})
+        }
+        res.status(403).json({msg: 'Error Creating Question',errors: err.message})}
 })
 router.post('/quiz/create/questions/:quizId',adminMiddleware, async (req, res)=>{
     try {
