@@ -11,10 +11,11 @@ app.use(express.json());
 app.use('/admin', adminRouter)
 
 const mongoose = require('mongoose');
+const {connectURL} = require("./config");
 
 const connectDB = async () => {
     try {
-        await mongoose.connect('mongodb://localhost:27017/Quiznest')
+        await mongoose.connect(connectURL).then(r => console.log('Connected to database'));
         console.log('MongoDB Connected');
     }catch (error) {
         console.error('Database Connection Error: ',error);

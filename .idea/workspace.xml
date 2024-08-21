@@ -4,15 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d7efd613-241e-489a-b004-74159ac92736" name="Changes" comment="Dashboard Page for Admins">
+    <list default="true" id="d7efd613-241e-489a-b004-74159ac92736" name="Changes" comment="update">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Backend/middlewares/admin.js" beforeDir="false" afterPath="$PROJECT_DIR$/Backend/middlewares/admin.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Backend/models/questionModel.js" beforeDir="false" afterPath="$PROJECT_DIR$/Backend/models/questionModel.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Backend/models/quizModel.js" beforeDir="false" afterPath="$PROJECT_DIR$/Backend/models/questionBank.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Backend/routes/admin.js" beforeDir="false" afterPath="$PROJECT_DIR$/Backend/routes/admin.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Frontend/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Frontend/src/Pages/Dashboard.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/src/Pages/Dashboard.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Frontend/src/main.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/src/main.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -150,6 +143,7 @@
       <workItem from="1723890785743" duration="159000" />
       <workItem from="1723890954256" duration="5000" />
       <workItem from="1724004441436" duration="4666000" />
+      <workItem from="1724256209462" duration="1386000" />
     </task>
     <task id="LOCAL-00001" summary="Added db file">
       <option name="closed" value="true" />
@@ -263,7 +257,15 @@
       <option name="project" value="LOCAL" />
       <updated>1722786798304</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="update">
+      <option name="closed" value="true" />
+      <created>1724256452442</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1724256452442</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -290,6 +292,19 @@
     <MESSAGE value="patch and delete" />
     <MESSAGE value="optimized" />
     <MESSAGE value="Dashboard Page for Admins" />
-    <option name="LAST_COMMIT_MESSAGE" value="Dashboard Page for Admins" />
+    <MESSAGE value="update" />
+    <option name="LAST_COMMIT_MESSAGE" value="update" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/Frontend/src/Pages/Dashboard.jsx</url>
+          <line>3</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
